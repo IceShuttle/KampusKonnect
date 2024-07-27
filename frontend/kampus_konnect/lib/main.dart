@@ -23,7 +23,7 @@ void main() async {
 }
 
 class MyApp extends StatefulWidget {
-  static const String baseUrl = 'http://192.168.29.121:3000';
+  static const String baseUrl = 'http://127.0.0.1:3000';
   @override
   _MyAppState createState() => _MyAppState();
 }

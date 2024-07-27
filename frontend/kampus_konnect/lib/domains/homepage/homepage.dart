@@ -47,12 +47,22 @@ class _HomePageState extends State<HomePage> {
         ),
         height: 50,
         child: Container(
+          
           // mainAxisAlignment: MainAxisAlignment.center,
           // crossAxisAlignment: CrossAxisAlignment.start,
-          padding: const EdgeInsets.fromLTRB(25, 10, 25, 5),
+          padding: const EdgeInsets.fromLTRB(25, 0, 25, 5),
           child: 
             
             TextField(
+              textAlignVertical: TextAlignVertical.top,
+              style: mytext.headingtext1(fontSize: 23, context),
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search,
+                size: 30,
+                color: Colors.white,),
+                border: InputBorder.none,
+                hintText: "Type to search...",
+              ),
               onSubmitted: (query) => {
                 _fetchPosts(query)
               },
